@@ -99,7 +99,10 @@ namespace GhCanvasViewport
                     }
                     return base.Cursor;
                 }
-                set => base.Cursor = value;
+                set
+                {
+                    base.Cursor = value;
+                }
             }
 
             Mode ComputeMode(System.Drawing.Point location)
